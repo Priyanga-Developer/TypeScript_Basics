@@ -21,4 +21,15 @@ createCourse()
 let newUser={name:"priya", isPaid:true, email:"priya@gmail.com"}
 createUser(newUser)
 
+///Using Type ==it’s common to want to use the same type more than once and refer to it by a single name.
+type User={
+    name:string,
+    email:string,
+    isActive:boolean
+}
+function objectCreate(user:User):User{
+  return { name :"", email:"",isActive: true}
+}
+objectCreate({name:"priya",email:"priyya@gmail.com",isActive:true})
+
 export {}
