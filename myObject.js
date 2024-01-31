@@ -19,3 +19,7 @@ createCourse();
 //Solution
 var newUser = { name: "priya", isPaid: true, email: "priya@gmail.com" };
 createUser(newUser);
+function objectCreate(user) {
+    return { name: "", email: "", isActive: true };
+}
+objectCreate({ name: "priya", email: "priyya@gmail.com", isActive: true });
