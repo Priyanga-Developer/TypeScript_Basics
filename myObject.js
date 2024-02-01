@@ -23,3 +23,14 @@ function objectCreate(user) {
     return { name: "", email: "", isActive: true };
 }
 objectCreate({ name: "priya", email: "priyya@gmail.com", isActive: true });
+var userCreate = {
+    name: "priyanga",
+    email: "ffdfdfdf",
+    isActive: true,
+    _id: 2335544,
+};
+var card = {
+    cardNum: 1235,
+    cardDate: 45445,
+    CVV: 56765
+};
