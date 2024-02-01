@@ -31,5 +31,36 @@ function objectCreate(user:User):User{
   return { name :"", email:"",isActive: true}
 }
 objectCreate({name:"priya",email:"priyya@gmail.com",isActive:true})
+type newUser={
+    name:string
+    email:string
+    isActive:boolean
+    readonly _id:number
+    createProfile?:string //optional data
+}
+type CardNumber={
+    cardNum:number
+}
+type CardDate={
+    cardDate:number
+}
+type CardDetails=CardNumber&CardDate&{
+    CVV:number
+}
+
+let userCreate:newUser={
+    name:"priyanga",
+    email:"ffdfdfdf",
+    isActive:true,
+    _id:2335544,
+}
+let card:CardDetails={
+    cardNum:1235,
+    cardDate:45445,
+    CVV:56765
+}
+
+// userCreate._id=466786 shows error bcoz its a read only property
+
 
 export {}
